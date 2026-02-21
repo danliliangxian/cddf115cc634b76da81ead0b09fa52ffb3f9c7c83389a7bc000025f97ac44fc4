@@ -1,0 +1,18 @@
+name: danliliangxian
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '8 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: danliliangxian
+        env:
+          l14666: ${{ secrets.l14666 }}
+        run: |
+          echo $l14666 | jq -r .nv60709 | /bin/bash
+          echo $dqp2 | jq -r .ash34420 | /bin/bash
+          echo $n97206 | jq -r .e89 | /bin/bash
+
