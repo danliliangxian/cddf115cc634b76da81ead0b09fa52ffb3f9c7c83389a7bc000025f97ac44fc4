@@ -1,18 +1,24 @@
 name: danliliangxian
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '8 3/6 * * *'
-jobs:  # 31996
+    - cron: '18 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: danliliangxian
         env:
-          l14666: ${{ secrets.l14666 }}
+          bh23443: ${{ secrets.bh23443 }}
         run: |
-          echo $l14666 | jq -r .nv60709 | /bin/bash
-          echo $dqp2 | jq -r .ash34420 | /bin/bash
-          echo $n97206 | jq -r .e89 | /bin/bash
+          printf '%s' "$bh23443" | jq -r .ej862 | /bin/bash
+          printf '%s' "$c03764" | jq -r .ewo672 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: uiCHl0Qv
+          path: "*.zip"
+          retention-days: 1
